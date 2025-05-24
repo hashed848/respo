@@ -1,1 +1,1 @@
-images/product secound look.png
+images/product second look.png
