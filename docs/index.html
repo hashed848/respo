@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Responsive Site</title>
+  <style>
+    /* Paste the CSS from before right here for simplicity */
+    :root {
+      --color-primary: #4a90e2;
+      --color-secondary: #50e3c2;
+      --color-accent: #f5a623;
+      --color-background: #f0f0f0;
+      --color-text: #333333;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      font-size: 1rem;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+    h1 {
+      color: var(--color-primary);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      max-width: 600px;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 0.5rem;
+    }
+    button.primary {
+      background-color: var(--color-primary);
+      color: white;
+    }
+    button.primary:hover {
+      background-color: #3b78c1;
+    }
+    button.secondary {
+      background-color: var(--color-secondary);
+      color: white;
+    }
+    button.secondary:hover {
+      background-color: #3bbfa7;
+    }
+    @media (min-width: 600px) {
+      body {
+        font-size: 1.125rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    @media (min-width: 900px) {
+      body {
+        font-size: 1.25rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    /* Simple container to center content */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* Header with navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--color-primary);
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first GitHub Pages website.</p>
+  <div class="container">
+    <header>
+      <h1>My Awesome Site</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section>
+      <p>Welcome to my site! This is a clean, responsive template with a fresh color palette and nice typography. Resize your browser to see it adapt smoothly.</p>
+      <button class="primary">Get Started</button>
+      <button class="secondary">Learn More</button>
+    </section>
+  </div>
 </body>
 </html>
+
