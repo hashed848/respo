@@ -1,1 +1,89 @@
-HTML structure for a black and white themed site: ```html <!DOCTYPE html> <html> <head> <body> <div class="container"> <h1> Welcome to my site </h1> <img src="your-image-url.jpg" alt="description of your image"> <p>This is some text about your image </p> <button>Read more</button> <button>Buy tickets</button> </body> </html> Remember to replace "your-image-url.jpg" with the actual URL of your image. You can then apply the CSS styles for the black and white theme and the layout.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCULPT - Exploring Art</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">SCUL.PT</div>
+    <nav class="nav">
+      <a href="#">Visit</a>
+      <a href="#">Exhibitions</a>
+      <a href="#">Events</a>
+      <a href="#">Learn</a>
+      <a href="#">Shop</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Exploring Old Architecture</h2>
+      <p>September 26, 2016 — Bus excursion</p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/your-photo.jpg" alt="Sculpture"/>
+    </div>
+  </section>
+
+  <section class="events">
+    <h3>Latest events</h3>
+    <div class="event-card">
+      <img src="images/your-photo.jpg" alt="Event Sculpture"/>
+      <div class="event-info">
+        <h4>Great Sculpture: Ancient to Contemporary</h4>
+        <p>From the beginnings of classical art to the rise of the Renaissance, explore a monumental journey.</p>
+        <p class="time">10:45–11:45 AM, Monday September 26</p>
+        <a href="#" class="btn small">Buy ticket</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-links">
+    <a href="#">📅 Calendar</a>
+    <a href="#">🕒 Hours</a>
+    <a href="#">🎟️ Tickets</a>
+    <a href="#">🏛️ Shop</a>
+  </section>
+
+  <section class="blog">
+    <h3>Interesting</h3>
+    <div class="post">
+      <img src="images/your-photo.jpg" alt="Blog Post"/>
+      <div class="post-info">
+        <h4>Big Ideas behind Small Things</h4>
+        <p>Along with material, color, shape, and context, scale is a fundamental idea in making and reception of works of art.</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="images/your-photo.jpg" alt="Statue"/>
+      <div class="post-info">
+        <h4>Ancient and Modern Statues</h4>
+        <p>We’re enthralled by organic stone. The ancient Greeks defined beauty in proportion, the Romans loved power in realism.</p>
+        <a href="#" class="btn small">All posts</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="contact">
+      <p><strong>Stay in touch</strong></p>
+      <p>+44 (878) 8723789</p>
+      <p>220 - 240 Kensington High Street, London W8 6AG</p>
+      <p>questions@sculptmuseum.com</p>
+      <form>
+        <input type="email" placeholder="Enter email for newsletter"/>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <p class="copyright">© SCULPT Museum 2025. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
