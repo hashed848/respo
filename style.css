@@ -134,4 +134,4 @@ a {
   font-size: 14px;
 }
 
-@media screen and (max-width: 768px) { /*  'img { max-width: 100%; height: auto; }' */ } You can adjust the 'max-width'
+@media screen and (max-width: 768px) { /*  'img { max-width: 100%; height: auto; }' */ } You can adjust the 'max-width'hero-content h2 { font-size: 24px; }
