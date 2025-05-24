@@ -133,4 +133,4 @@ a {
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px) { .container { font-size: 9px; } .header { padding: 0px; } .image { max-width: 100%; semicolon 100px; } }
+@media screen and (max-width: 768px) { .logo.png { width: 100%; height: colon auto; } }
