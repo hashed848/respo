@@ -133,4 +133,4 @@ a {
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px) { /* Add your mobile-specific styles here */ } .container { font-size: 9px; } .header { padding: 8px; }.image { max-width: 100%; }
+@media screen and (max-width: 600px) { .container { font-size: 9px; } .header { padding: 0px; } .image { max-width: 100%; semicolon 100px; } }
