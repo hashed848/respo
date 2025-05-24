@@ -1,1 +1,135 @@
-eight: auto; } button { background-color: white; color: black; padding: 10px 20px; border: 1px solid black; cursor: pointer; } ``` This will set the background color to black, the text color to white, center the content, and style the image and buttons.
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ddd;
+  background-color: #0f0f0f;
+  line-height: 1.6;
+}
+
+a {
+  color: #f56f51;
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #111;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: #1a1a1a;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #f56f51;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn.small {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.events, .blog {
+  padding: 60px 40px;
+  background: #121212;
+}
+
+.event-card, .post {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.event-card img, .post img {
+  max-width: 200px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.event-info, .post-info {
+  max-width: 600px;
+}
+
+.event-info h4, .post-info h4 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: space-around;
+  background: #1a1a1a;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer {
+  background: #111;
+  padding: 40px;
+  color: #999;
+}
+
+.footer form {
+  margin-top: 10px;
+}
+
+.footer input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer button {
+  padding: 8px 14px;
+  background: #f56f51;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
