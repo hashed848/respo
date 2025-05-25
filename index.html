@@ -1,90 +1,103 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">html "style.css" rel="stylesheet">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ALVE PRODUCTION</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sculpt Museum</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="site-header">
-    <div class="logo">ALVE PRODUCTION</div>
-    <nav class="nav">
-      <a href="#">Visit</a>
-      <a href="#">Exhibitions</a>
-      <a href="#">Events</a>
-      <a href="#">Learn</a>
-      <a href="#">Shop</a>
+    <div class="logo">SCUL.PT</div>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#">Visit</a></li>
+        <li><a href="#">Exhibition</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <h2>ALVE</h2>
-      <p>FUN STARTS HERE.</p>
+    <div class="hero-text">
+      <span class="date">September 26, 2016 &mdash; Bus excursion</span>
+      <h1>Exploring Old Architecture</h1>
       <a href="#" class="btn">Read more</a>
+      <div class="pagination">1/4</div>
     </div>
     <div class="hero-image">
-      <img src="logo.png" alt="Sculpture"/>
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Sculpture">
     </div>
   </section>
 
   <section class="events">
-    <h3>Latest events</h3>
-    <div class="event-card">
-      <img src="Look.png" alt="Event Sculpture"/>
+    <h2>Latest events</h2>
+    <div class="event-grid">
+      <div class="event-img">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Sculpture Event">
+      </div>
       <div class="event-info">
-        <h4>MEME CARDS</h4>
-        <p>Not your grandma’s card game (unless she's hilarious)..</p>
-        <p class="time">10:45–11:45 AM, Monday September 26</p>
+        <h3>Great Sculpture: Ancient to Contemporary</h3>
+        <p>From the beginnings of classicism to the rise of Romanticism, discover important periods, cultural influences, and their primary context.</p>
+        <span class="event-time">08:45-11:45 AM, Monday, September 26</span>
         <a href="#" class="btn small">Buy ticket</a>
       </div>
     </div>
   </section>
 
   <section class="quick-links">
-    <a href="#">📅 Calendar</a>
-    <a href="#">🕒 Hours</a>
-    <a href="#">🎟️ Tickets</a>
-    <a href="#">🏛️ Shop</a>
+    <ul>
+      <li><a href="#">Calendar</a></li>
+      <li><a href="#">Hours</a></li>
+      <li><a href="#">Tickets</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
   </section>
 
-  <section class="blog">
-    <h3>Interesting</h3>
-    <div class="post">
-      <img src="images/your-photo.jpg" alt="Blog Post"/>
-      <div class="post-info">
+  <section class="interesting">
+    <h2>Interesting</h2>
+    <div class="interesting-grid">
+      <div class="interesting-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Gallery">
         <h4>Big Ideas behind Small Things</h4>
-        <p>Along with material, color, shape, and context, scale is a fundamental idea in making and reception of works of art.</p>
+        <p>Align with material, color, line, shape, and contrast. Scale is often overlooked, making a real impression regardless of size.</p>
+        <span class="date">September 20, 2016</span>
       </div>
-    </div>
-
-    <div class="post">
-      <img src="images/your-photo.jpg" alt="Statue"/>
-      <div class="post-info">
+      <div class="interesting-card">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Statue">
         <h4>Ancient and Modern Statues</h4>
-        <p>We’re enthralled by organic stone. The ancient Greeks defined beauty in proportion, the Romans loved power in realism.</p>
-        <a href="#" class="btn small">All posts</a>
+        <p>We are enthralled by organic stories. The ancient Greeks used the word "mimesis" to describe the statues of Pharaonic Egypt.</p>
+        <span class="date">September 18, 2016</span>
       </div>
     </div>
+    <a href="#" class="btn small">All posts</a>
   </section>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="contact">
-      <p><strong>Stay in touch</strong></p>
-      <p>+44 (878) 8723789</p>
-      <p>220 - 240 Kensington High Street, London W8 6AG</p>
+      <h3>Stay in touch</h3>
+      <p>+4 (878) 8723789</p>
+      <p>220-240 Kensington High Street, London W8 6AG</p>
       <p>questions@sculptmuseum.com</p>
       <form>
-        <input type="email" placeholder="Enter email for newsletter"/>
-        <button type="submit">Subscribe</button>
+        <input type="email" placeholder="Enter your email for newsletter">
+        <button type="submit" class="btn small">Subscribe</button>
       </form>
     </div>
-    <p class="copyright">© SCULPT Museum 2025. All rights reserved.</p>
+    <div class="footer-note">
+      &copy; 2025 Sculpt Museum. All rights reserved.
+    </div>
   </footer>
-
+  <script>
+    // Simple mobile nav toggle
+    document.getElementById('menu-toggle').onclick = function() {
+      document.getElementById('main-nav').classList.toggle('open');
+    };
+  </script>
 </body>
 </html>
+
 
